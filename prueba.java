@@ -16,14 +16,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * http://www.softwaretestinghelp.com/selenium-tutorial-1/
  * 
  * Usaremos Chrome como navegador para este script. 
- * Tambien deberemos tener descargado el ejecutable chromedriver.exe (se puede encontrar en su web).
+ * Tambien deberemos tener descargado el ejecutable chromedriver.exe (se puede encontrar aqui: https://sites.google.com/a/chromium.org/chromedriver/downloads).
  * 
  *********************/
 public class prueba { 
   public static void main(String[] args) { 
 	  
-	  // Esta primera linea sirve para que la clase ChromeDriver pueda encontrar el servidor chromedriver.exe  
-	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\j.fernandez.romero\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	  // Esta primera linea sirve para que la clase ChromeDriver pueda encontrar el servidor chromedriver.exe, importante poner doble barra
+	  // porque la barra sirve para escapar un caracter, asi que tenemos que escapar la propia barra para que la interprete como caracter y que funcione.
+	  System.setProperty("webdriver.chrome.driver", "C:\\ruta\\DondeSeEncuentra\\ChromeDrive\\chromedrive.exe");
 	  
 	 // Inicializamos el objeto ChromeDriver como driver
 	  WebDriver driver = new ChromeDriver();
