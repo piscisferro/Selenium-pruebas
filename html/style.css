@@ -1,0 +1,39 @@
+div {
+    
+    margin: 5px 0;
+    
+}
+
+section {
+    
+    margin: 15px 0;
+    
+}
+
+p {
+    margin: 10px 5px;
+    
+}
+
+#tamaño {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#contenido { display: none; }
+
+#desplegable { border: 1px solid blue; width: 250px}
+
+.rojo { background-color: red; }
+
+.azul { background-color: blue; }
+
+.amarillo { background-color: yellow; }
+
+.naranja { background-color: orange; }
+
+.verde { background-color: green; }
+
+.rosa { background-color: pink; }

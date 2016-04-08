@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<title>Untitled Document</title>
+		<meta name="Author" content=""/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+       
+        <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+	<body>
+	    <div class="container">
+	        
+            <!-- Aqui testearemos como encontrar inputs, escribir en ellos y luego mandar el formulario -->
+            <section>
+	            <form id="formulario">
+	                <label for="email">Email:</label><input type="text" id="email" name="email" placeholder="example@email.com" autofocus><div id="feedbackEmail"></div>
+	                <label for="password">Contraseña:</label><input type="password" id="password" name="password" placeholder="Password"><div id="feedbackPassword"></div>
+	                <input type="submit" id="submit">
+	            </form>
+	        </section>
+	        
+	        <!-- Este cuadro se ira haciendo grande conforme dejemos el click pulsado y pararemos hasta alcanzar cierto tamaño (leyendo su css)-->
+	        <section>
+	            <div id="tamaño"</div>
+	        </section>
+	        
+	        <!-- Aqui testearemos como encontrar el boton, hacer click con el y cambiar el color de fondo hasta encontrar el deseado leyendo su clase -->
+	        <section>
+	            Este boton cambiara de color cada vez que se pulse.
+	            <button id="cambiaColor">Click me!</button>
+	        </section>
+	        
+	        <!-- Aqui testeamos como hacer click en un div para abrirlo o cerrarlo leyendo el HTML del desplegable -->
+	        <section>
+	            <div id="desplegable">
+                    <p>Clickeame para abrirme o cerrar</p>
+	                <p id="contenido">¡Estoy Cerrado!</p>   
+	            </div>
+	        </section>
+	        
+	        <!-- Aqui testearemos como hacer click en un enlace, ir a otra pestaña y automatizar la otra pestaña -->
+	        <div>
+	            <a id="enlace" href="index.html" target="_blank"><button>Enlace</button></a>
+	        </div>
+	    </div>
+	</body>
+</html>
