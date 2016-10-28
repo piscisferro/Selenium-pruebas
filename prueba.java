@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * 
  * Este es un ejemplo de Selenium usa google accounts (la web de logueo de google)
  * 
- * Con este pequeño script rellenaremos de forma automatica los campo de email y password
+ * Con este pequeÃ±o script rellenaremos de forma automatica los campo de email y password
  * del formulario de logueo.
  * 
  * Este Script es un script modificado de un tutorial gratuito de Selenium que se puede encontrar en:
@@ -24,7 +24,7 @@ public class prueba {
 	  
 	  // Esta primera linea sirve para que la clase ChromeDriver pueda encontrar el servidor chromedriver.exe, importante poner doble barra
 	  // porque la barra sirve para escapar un caracter, asi que tenemos que escapar la propia barra para que la interprete como caracter y que funcione.
-	  System.setProperty("webdriver.chrome.driver", "C:\\ruta\\DondeSeEncuentra\\ChromeDrive\\chromedrive.exe");
+	  System.setProperty("webdriver.chrome.driver", "C:\\ruta\\DondeSeEncuentra\\ChromeDrive\\chromedriver.exe");
 	  
 	 // Inicializamos el objeto ChromeDriver como driver
 	  WebDriver driver = new ChromeDriver();
@@ -71,14 +71,14 @@ public class prueba {
 	  next.click();
 	  
 	  // Guardamos en la variable password el elemento Web con la id "Passwd" que en el HTML corresponde al input 
-	  // del formulario donde introducimos nuestra contraseña
+	  // del formulario donde introducimos nuestra contraseÃ±a
 	  WebElement password = driver.findElement(By.id("Passwd"));
 	  
 	  // Lo ponemos en blanco (para borrar por si hay algun placeholder por ejemplo)
 	  password.clear();
 	  
-	  // Escribimos nuestra contraseña
-	  password.sendKeys("contraseñaejemplo");
+	  // Escribimos nuestra contraseÃ±a
+	  password.sendKeys("contraseÃ±aejemplo");
 	  
 	  // Guardamos en la variable SignInButton el elemento Web con la id "signIn" que en el HTML corresponde al boton de logueo
 	  WebElement SignInButton = driver.findElement(By.id("signIn"));
